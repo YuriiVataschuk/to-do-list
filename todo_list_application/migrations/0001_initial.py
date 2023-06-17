@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
                 ('created_at', models.DateTimeField()),
                 ('deadline', models.DateTimeField()),
                 ('completed', models.BooleanField()),
-                ('tags', models.ManyToManyField(related_name='tags', to='todo_page.Tag')),
+                ('tags', models.ManyToManyField(related_name='tags', to='todo_list_application.Tag')),
             ],
             options={
                 'ordering': ['completed'],

@@ -3,7 +3,7 @@
 {% block content %}
   <h1>
     Tasks list
-    <a href="{% url 'todo_page:task-create' %}" class="btn btn-primary link-to-page">
+    <a href="{% url 'todo_list_application:task-create' %}" class="btn btn-primary link-to-page">
       Create
     </a>
   </h1>
@@ -18,11 +18,11 @@
           <text style="color: red; font-weight: bold">Not done</text>
           {% endif %}
           {% if task.completed is True %}
-            <a href="{% url 'todo_page:change_task_status' pk=task.id %}" class="btn btn-danger link-to-page">
+            <a href="{% url 'todo_list_application:change_task_status' pk=task.id %}" class="btn btn-danger link-to-page">
               Undo
             </a>
           {% else %}
-            <a href="{% url 'todo_page:change_task_status' pk=task.id %}" class="btn btn-success link-to-page">
+            <a href="{% url 'todo_list_application:change_task_status' pk=task.id %}" class="btn btn-success link-to-page">
               Complete
             </a>
           {% endif %}
@@ -34,11 +34,11 @@
             {% for tag in task.tags.all %}
               "{{ tag.name }}"
             {% endfor %}
-            <a href="{% url 'todo_page:task-update' pk=task.id %}">
+            <a href="{% url 'todo_list_application:task-update' pk=task.id %}">
               Update
             </a>
             <a style="color: red"
-               href="{% url 'todo_page:task-delete' pk=task.id %}">
+               href="{% url 'todo_list_application:task-delete' pk=task.id %}">
               Delete
             </a>
           {% endif %}

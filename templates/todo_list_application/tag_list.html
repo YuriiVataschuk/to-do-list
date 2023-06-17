@@ -3,7 +3,7 @@
 {% block content %}
   <h1>
     Tags List
-    <a href="{% url 'todo_page:tag-create' %}" class="btn btn-primary link-to-page">
+    <a href="{% url 'todo_list_application:tag-create' %}" class="btn btn-primary link-to-page">
       Add
     </a>
   </h1>
@@ -24,13 +24,13 @@
           </td>
 
           <td>
-              <a href="{% url 'todo_page:tag-update' pk=tag.id %}">
+              <a href="{% url 'todo_list_application:tag-update' pk=tag.id %}">
                 Update
               </a>
           </td>
           <td>
               <a style="color: red"
-                href="{% url 'todo_page:tag-delete' pk=tag.id %}">
+                href="{% url 'todo_list_application:tag-delete' pk=tag.id %}">
                 Delete
               </a>
           </td>
