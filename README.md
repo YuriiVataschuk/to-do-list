@@ -25,3 +25,11 @@ The home page can be accessed at 127.0.0.1:8000/. It contains the following elem
 3. Buttons to update and delete each task.
 4. A button to mark a task as complete or undo if it's already done. Clicking this button toggles the status of the task and redirects back to this page.
 * A button to add a new task.
+
+## Screenshots
+
+![img.png](img.png)
+
+![img_1.png](img_1.png)
+
+![img_2.png](img_2.png)

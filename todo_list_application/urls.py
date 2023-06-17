@@ -1,7 +1,16 @@
 from django.urls import path
 
-from todo_list_application.views import TagListView, TaskListView, TagCreateView, TagUpdateView, TagDeleteView, TaskCreateView, \
-    TaskUpdateView, TaskDeleteView, ChangeStatusView
+from todo_list_application.views import (
+    TagListView,
+    TaskListView,
+    TagCreateView,
+    TagUpdateView,
+    TagDeleteView,
+    TaskCreateView,
+    TaskUpdateView,
+    TaskDeleteView,
+    ChangeStatusView
+)
 
 urlpatterns = [
     path("tags/", TagListView.as_view(), name="tag_list"),
